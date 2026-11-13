@@ -1,0 +1,115 @@
+{
+  "project_title": "DSA & System Design Mastery Study Tracker",
+  "design_archetype": "Tactical Swiss Minimalist (Focus-Driven Dark/Light Dashboard)",
+  "emotional_tone": "Relentless Focus, Mastery, Command Center Precision, Zero Friction",
+  "theme_strategy": {
+    "default_mode": "dark",
+    "toggle_supported": true,
+    "dark_background": "#090D16",
+    "dark_card_surface": "#111827",
+    "dark_border": "#1F2937",
+    "light_background": "#F8FAFC",
+    "light_card_surface": "#FFFFFF",
+    "light_border": "#E2E8F0"
+  },
+  "typography": {
+    "font_family_imports": [
+      "https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@500;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    ],
+    "headline_font": "'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif",
+    "body_font": "'Plus Jakarta Sans', sans-serif",
+    "code_font": "'JetBrains Mono', monospace",
+    "scale": {
+      "h1": "text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight",
+      "h2": "text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight",
+      "h3": "text-lg sm:text-xl font-semibold",
+      "h4": "text-base font-semibold",
+      "body": "text-sm sm:text-base leading-relaxed",
+      "caption": "text-xs font-mono uppercase tracking-widest text-muted-foreground"
+    }
+  },
+  "color_palette": {
+    "primary_brand": {
+      "emerald": "#10B981",
+      "emerald_glow": "rgba(16, 185, 129, 0.15)",
+      "violet": "#6366F1",
+      "amber": "#F59E0B",
+      "rose": "#F43F5E"
+    },
+    "difficulty_badges": {
+      "Easy": { "bg": "bg-emerald-500/10", "text": "text-emerald-400", "border": "border-emerald-500/20" },
+      "Medium": { "bg": "bg-amber-500/10", "text": "text-amber-400", "border": "border-amber-500/20" },
+      "Hard": { "bg": "bg-rose-500/10", "text": "text-rose-400", "border": "border-rose-500/20" }
+    },
+    "status_colors": {
+      "Solved": { "bg": "bg-emerald-500/15", "text": "text-emerald-400", "border": "border-emerald-500/30", "icon": "CheckCircle2" },
+      "Solving": { "bg": "bg-blue-500/15", "text": "text-blue-400", "border": "border-blue-500/30", "icon": "PlayCircle" },
+      "Revise": { "bg": "bg-amber-500/15", "text": "text-amber-400", "border": "border-amber-500/30", "icon": "RotateCcw" },
+      "Not Started": { "bg": "bg-slate-800/40", "text": "text-slate-400", "border": "border-slate-700/40", "icon": "Circle" }
+    }
+  },
+  "image_urls": {
+    "study_hero_banner": "https://images.unsplash.com/photo-1520583457224-aee11bad5112?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwzfHxmb2N1c2VkJTIwc3R1ZGVudCUyMHN0dWR5JTIwd29ya3NwYWNlJTIwYWVzdGhldGljJTIwZGFyayUyMG1pbmltYWx8ZW58MHx8fGJsYWNrfDE3OTIzMDIzNDB8MA&ixlib=rb-4.1.0&q=85",
+    "avatar_placeholder": "https://avatars.githubusercontent.com/u/9919?v=4"
+  },
+  "dsa_pattern_data_spec": {
+    "total_patterns": 9,
+    "total_problems": 49,
+    "patterns": [
+      "Two Pointers",
+      "Sliding Window",
+      "Fast & Slow Pointers",
+      "Binary Search",
+      "Trees & BFS/DFS",
+      "Heaps / Priority Queue",
+      "Backtracking",
+      "Graphs & Topological Sort",
+      "Dynamic Programming"
+    ]
+  },
+  "layout_and_architecture": {
+    "structure": "Sidebar + Header + Multi-tab Fluid View",
+    "navigation_tabs": [
+      { "id": "overview", "label": "Dashboard Overview", "icon": "LayoutDashboard" },
+      { "id": "dsa-patterns", "label": "DSA Patterns (49)", "icon": "Code2" },
+      { "id": "system-design", "label": "System Design Playlist", "icon": "Server" },
+      { "id": "mocks", "label": "Mock Interviews & Weekend", "icon": "Video" },
+      { "id": "scheduler", "label": "Session Scheduler & Reminders", "icon": "CalendarClock" },
+      { "id": "weekend-revise", "label": "Weekend Revision Deck", "icon": "Sparkles" }
+    ],
+    "dashboard_grid_bento": {
+      "mode": "High Density Data Dashboard",
+      "widgets": [
+        "Overall Mastery Radial Progress Ring",
+        "DSA Pattern Completion Breakdown",
+        "System Design Video Tracker Card",
+        "Upcoming Scheduled Session + 5-min Reminder Banner",
+        "Weekend Mock Interview Countdown & Quick Actions",
+        "Streak & Study Metrics Pill Matrix"
+      ]
+    }
+  },
+  "key_features_to_build": [
+    "Pre-seeded 49 Curated LeetCode DSA problems across 9 patterns with direct links, status toggles, notes, difficulty tag, and revision flags",
+    "Pre-seeded System Design YouTube Playlist (5faMjKuB9bc & fhdPyoO6aXI mock interview pre-configured)",
+    "Pramp + System Design Weekend Mock Interview Scheduler",
+    "Study Session Scheduler with email notification dialog & simulated 5-minute pre-session browser alert notification",
+    "Weekend Revision Deck filtering problems marked 'Revise' or flagged for weekend review",
+    "Filterable problem search by difficulty, pattern, status, and search query",
+    "LocalStorage persistent state management for single-user instant updates",
+    "Data export/import backup feature for single-user peace of mind"
+  ],
+  "component_guidelines": {
+    "cards": "Border 1px border-slate-800 dark:border-slate-800/80 bg-slate-900/60 backdrop-blur-md rounded-xl p-5 shadow-sm transition-all hover:border-slate-700",
+    "buttons": "Pill or rounded-lg buttons with explicit state transitions (hover:brightness-110 active:scale-[0.98])",
+    "progress_bars": "Custom animated gradient progress bars with glow effects",
+    "test_id_rule": "ALL interactive elements MUST include data-testid attributes in kebab-case format (e.g. data-testid='dsa-problem-status-select', data-testid='schedule-session-btn')"
+  },
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Avoid generic AI templates. Use dark glassmorphism, precise 1px borders, subtle noise/gradient glows.",
+    "Do NOT use transparent dropdown menu backgrounds.",
+    "Ensure all buttons, inputs, tabs, modal triggers have clear data-testid attributes.",
+    "Do NOT center align the whole page. Keep left-aligned clean layout structure.",
+    "Use Sonner toast notifications for status updates and reminder confirmations."
+  ]
+}
