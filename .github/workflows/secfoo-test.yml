@@ -22,5 +22,6 @@ jobs:
         with:
           agent: fake
           comment: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
           SECFOO_FAKE_AGENT: "1"
