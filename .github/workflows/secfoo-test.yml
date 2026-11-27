@@ -1,0 +1,26 @@
+name: Test secfoo sticky comment
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  security-events: write
+
+jobs:
+  security-review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run secfoo
+        uses: niharika3715/secfoo@pr-comment-demo
+        with:
+          agent: fake
+          comment: true
+        env:
+          SECFOO_FAKE_AGENT: "1"
